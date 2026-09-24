@@ -1,14 +1,13 @@
 # Portfolio Risk Management System (with a real SQLite database)
 
-A small, resume-ready project that pulls real stock prices from Yahoo
+A small project that pulls real stock prices from Yahoo
 Finance, stores them in a proper SQL database, and calculates
 portfolio **Value-at-Risk (VaR)** and a per-asset market risk
 breakdown.
 
-## Why this version is different
 
-The first version of this project kept price data only inside the
-Python code. This version adds a real database step: prices are
+The project kept price data only inside the
+Python code and adds a real database step: prices are
 downloaded once and written into a SQLite table, and every later
 calculation reads that data back out with plain SQL — the same
 pattern used in real risk/finance systems, just at a small scale.
